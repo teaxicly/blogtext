@@ -1,0 +1,17 @@
+---
+ title:teaxicly Blog
+ des:这是个悲伤的故事
+ layouts:default
+ ---
+ 
+<div>
+{% for post in site.posts %}
+	<a href="{{ site.baseurl}} {{post.url}}">
+		/blogtext/index.html
+	<h2>{{ post.title }}</h2>	
+	</a>
+    <h4>{{post.des}}</h4>
+		
+
+{% endfor %}
+</div>
